@@ -1,0 +1,96 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+  @media (max-width: $screen-md-min) {
+    padding-top: 26px;
+  }
+
+  &__container {
+    @include container-fixed;
+
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-lg;
+    }
+  }
+
+  &__logo {
+    float: left;
+    @media (max-width: $screen-md-min) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__phone {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    fill: #5C5C6D;
+
+    @media (max-width: $screen-md) {
+      display: block;
+    }
+    @media(max-width: $screen-sm){
+
+    }
+  }
+
+  &__content {
+    float: right;
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    margin-top: 4px;
+  }
+
+  &__burger {
+    display: none;
+    position: absolute;
+    top: 29px;
+    right: 30px;
+
+    @media (max-width: $screen-md) {
+      display: block;
+    }
+  }
+}
+
+.nav {
+  padding: 0;
+  list-style: none;
+  font-family: $museosans-medium;
+
+  & > li {
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & > a {
+      color: black;
+      padding: 0;
+
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}

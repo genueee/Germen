@@ -1,0 +1,38 @@
+.head-h1 {
+  font-size: 67px;
+  font-family: $museosans-bold;
+
+  @media (max-width: $screen-md) {
+    font-size: 50px;
+    line-height: normal;
+  }
+  @media (max-width: $screen-sm) {
+    font-size: 33px;
+  }
+}
+
+.head-h2 {
+  font-size: 26px;
+  font-family: $museosans-bold;
+  @media (max-width: $screen-sm) {
+    font-size: 19px;
+  }
+}
+
+.head-h3 {
+  font-size: 21px;
+  font-family: $museosans-bold;
+  @media (max-width: $screen-sm) {
+    font-size: 20px;
+  }
+}
+
+strong {
+  font-family: $museosans-bold;
+}
+
+.text {
+  &--light {
+    opacity: 0.27;
+  }
+}
