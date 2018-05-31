@@ -13,6 +13,30 @@
     display: inline-block;
     width: 26px;
     height: 22px;
+
+    #popup-product & {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #fff;
+
+      span {
+        margin: 0;
+        position: relative;
+        transform: scale(.8);
+
+        &:before,
+        &:after {
+          margin: -2px 0 0 -13px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+      }
+    }
   }
 
   &__wrapper {

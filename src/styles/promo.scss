@@ -706,6 +706,14 @@
 
     @media(max-width: $screen-md) {
       display: block;
+
+      #popup-product & {
+        height: 0;
+
+        .logo {
+          display: none;
+        }
+      }
     }
 
     .logo {
@@ -728,6 +736,10 @@
     position: absolute !important;
     top: 26px;
     right: 21px;
+    @media(max-width: $screen-sm){
+      top: 20px;
+      right: 20px;
+    }
   }
 
   &__content {
@@ -757,7 +769,22 @@
     @include make-md-column(11.15);
     float: right !important;
     @media(max-width: $screen-md){
-      padding: 0;
+      &--mobile {
+        width: 100%;
+        padding: 0;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        display: block !important;
+      }
+
+      &--desktop {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
     }
 
     .btn {

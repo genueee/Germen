@@ -1,3 +1,13 @@
+var isTouch = function(){
+    return !!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
+};
+
+if (isTouch()) {
+    $('html').addClass('touch');
+} else {
+    $('html').addClass('no-touch');
+}
+
 $(function () {
     $('.selectpicker').selectpicker();
 });

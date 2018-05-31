@@ -141,6 +141,10 @@
     &:hover {
       background-color: #fff !important;
     }
+
+    .touch & {
+      display: none !important;
+    }
   }
 
   .slick-slide {
