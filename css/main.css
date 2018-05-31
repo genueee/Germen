@@ -7443,7 +7443,11 @@ input, textarea, button {
   position: relative; }
   @media (max-width: 1030px) {
     .popup-promo__header {
-      display: block; } }
+      display: block; }
+      #popup-product .popup-promo__header {
+        height: 0; }
+        #popup-product .popup-promo__header .logo {
+          display: none; } }
   .popup-promo__header .logo {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -7461,6 +7465,10 @@ input, textarea, button {
   position: absolute !important;
   top: 26px;
   right: 21px; }
+  @media (max-width: 700px) {
+    .popup-promo__close {
+      top: 20px;
+      right: 20px; } }
 
 .popup-promo__content {
   margin-left: -15px;
@@ -7515,8 +7523,18 @@ input, textarea, button {
       float: left;
       width: 46.45833%; } }
   @media (max-width: 1030px) {
-    .popup-promo__btn {
-      padding: 0; } }
+    .popup-promo__btn--mobile {
+      width: 100%;
+      padding: 0;
+      position: -webkit-sticky;
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      display: block !important; }
+    .popup-promo__btn--desktop {
+      display: none; } }
+  .popup-promo__btn--mobile {
+    display: none; }
   .popup-promo__btn .btn {
     width: 100%;
     min-height: 56px;
@@ -8181,7 +8199,27 @@ input, textarea, button {
     .mobile-menu {
       display: inline-block;
       width: 26px;
-      height: 22px; } }
+      height: 22px; }
+      #popup-product .mobile-menu {
+        width: 36px;
+        height: 36px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #fff; }
+        #popup-product .mobile-menu span {
+          margin: 0;
+          position: relative;
+          transform: scale(0.8); }
+          #popup-product .mobile-menu span:before, #popup-product .mobile-menu span:after {
+            margin: -2px 0 0 -13px;
+            position: absolute;
+            top: 50%;
+            left: 50%; } }
   .mobile-menu__wrapper {
     top: 0;
     right: 0;
@@ -8343,6 +8381,8 @@ input, textarea, button {
           background: url("../img/pointer-right-2x.png"); } }
     .promo-product .slick-arrow:hover {
       background-color: #fff !important; }
+    .touch .promo-product .slick-arrow {
+      display: none !important; }
   .promo-product .slick-slide {
     height: 100%;
     outline: none; }
