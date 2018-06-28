@@ -8002,6 +8002,46 @@ input, textarea, button {
       font-family: "MuseoSansBold";
       font-size: 25px;
       font-weight: bold; }
+      .promo-order__item__price__old {
+        margin-right: 8px;
+        color: #999;
+        text-decoration: line-through; }
+    .promo-order__item__coupon {
+      margin-top: 4px;
+      font-size: 13px; }
+      .promo-order__item__coupon__link {
+        border-bottom: 1px solid;
+        text-decoration: none; }
+        .promo-order__item__coupon__link:hover {
+          text-decoration: none; }
+  .promo-order__error {
+    margin-top: 10px;
+    color: #f72626;
+    font-size: 13px;
+    line-height: 20px; }
+  .promo-order__coupon {
+    margin-bottom: 36px; }
+    .promo-order__coupon__title {
+      margin-bottom: 13px; }
+    .promo-order__coupon__button {
+      height: 44px;
+      background-color: #52b46e; }
+      .promo-order__coupon__button.btn {
+        padding-right: 20px;
+        padding-left: 20px; }
+      .promo-order__coupon__button:hover {
+        background-color: #67bd80; }
+    .promo-order__coupon__sum {
+      color: #52b46e;
+      font-size: 16px;
+      font-family: "MuseoSansBold"; }
+    .promo-order__coupon__discount__cancel {
+      margin-left: 5px;
+      color: #bcbcbc;
+      font-size: 12px;
+      cursor: pointer; }
+      .promo-order__coupon__discount__cancel:hover {
+        color: #777; }
   .promo-order__map {
     width: 100%;
     margin-bottom: 15px; }
@@ -8146,6 +8186,11 @@ input, textarea, button {
       @media (max-width: 1030px) {
         .promo-order__submit .btn {
           max-width: 100%; } }
+    .promo-order__submit__old-price {
+      margin-right: 5px;
+      margin-left: 5px;
+      opacity: .4;
+      text-decoration: line-through; }
 
 .content {
   padding-top: 126px;
