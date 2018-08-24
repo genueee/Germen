@@ -8012,7 +8012,7 @@ input, textarea, button {
       .promo-order__item__coupon__link {
         border-bottom: 1px solid;
         text-decoration: none; }
-        .promo-order__item__coupon__link:hover {
+        .promo-order__item__coupon__link:hover, .promo-order__item__coupon__link:active, .promo-order__item__coupon__link:focus {
           text-decoration: none; }
   .promo-order__error {
     margin-top: 10px;
@@ -8044,21 +8044,20 @@ input, textarea, button {
         color: #777; }
   .promo-order__map {
     width: 100%;
-    margin-bottom: 15px; }
-    @media (max-width: 700px) {
-      .promo-order__map {
-        margin-bottom: 8px; } }
+    margin-bottom: 36px; }
     .promo-order__map__title {
       margin-bottom: 13px; }
       @media (max-width: 700px) {
         .promo-order__map__title {
           text-align: center; } }
+    .promo-order__map__block {
+      height: 450px; }
+      @media (max-width: 700px) {
+        .promo-order__map__block {
+          height: 225px; } }
     .promo-order__map iframe {
       width: 100%;
-      height: 345px; }
-      @media (max-width: 700px) {
-        .promo-order__map iframe {
-          height: 202px; } }
+      height: 100%; }
   .promo-order__row {
     margin-left: -15px;
     margin-right: -15px; }
